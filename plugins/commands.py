@@ -67,7 +67,7 @@ async def start(bot, cmd):
                 buttons = [
                     [
                        
-                        InlineKeyboardButton('🔔Click 👉 New Ott Updates 📢', url='https://t.me/+85GlzP8aeGU3Zjc1')
+                        InlineKeyboardButton('🔔Click 👉 New Ott Movies 📢', url='https://t.me/+85GlzP8aeGU3Zjc1')
                     ]
                     ]
                 await bot.send_cached_media(
