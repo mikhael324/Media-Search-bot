@@ -314,7 +314,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = [
                     [
                      
-                        InlineKeyboardButton('🔱 Click To Join Movie Channel 🔱', url='https://t.me/+8rBLWgeC8MliNGU9')
+                        InlineKeyboardButton('🔔Click 👉 New Ott Movies 📢', url='https://t.me/+8rBLWgeC8MliNGU9')
                     ]
                     ]
                 
@@ -346,7 +346,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = [
                     [
                        
-                        InlineKeyboardButton('🔱 Click To Join Movie Channel 🔱', url='https://t.me/+8rBLWgeC8MliNGU9')
+                        InlineKeyboardButton('🔔Click 👉 New Ott Movies 📢', url='https://t.me/+8rBLWgeC8MliNGU9')
                     ]
                     ]
                 
