@@ -4,7 +4,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQ
 from pyrogram import Client, filters
 import re
 from pyrogram.errors import UserNotParticipant
-from utils import get_filter_results, get_file_details, is_subscribed, get_poster
+from utils import get_search_results, get_filter_results, get_file_details, is_subscribed, get_poster
 BUTTONS = {}
 BOT = {}
 @Client.on_message(filters.text & filters.private & filters.incoming & filters.user(AUTH_USERS) if AUTH_USERS else filters.text & filters.private & filters.incoming)
@@ -50,7 +50,7 @@ async def filter(client, message):
     if 2 < len(message.text) < 100:    
         btn = []
         search = message.text
-        files = await get_filter_results(query=search)
+        files = await get_search_results(query=search)
         if files:
             for file in files:
                 file_id = file.file_id
