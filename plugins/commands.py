@@ -67,7 +67,7 @@ async def start(bot, cmd):
                 buttons = [
                     [
                        
-                        InlineKeyboardButton('🔔Click 👉 New Ott Movies 📢', url='https://t.me/+85GlzP8aeGU3Zjc1')
+                        InlineKeyboardButton('🔔Click 👉 New Ott Movies 📢', url='https://t.me/+zW-bcv3QtgZjZTE9')
                     ]
                     ]
                 await bot.send_cached_media(
@@ -100,7 +100,7 @@ async def start(bot, cmd):
                 [
                     [
                         
-                        InlineKeyboardButton("Movie Updates Channel", url="https://t.me/+f8itNAM31C00Mjc1")
+                        InlineKeyboardButton("Movie Updates Channel", url="https://t.me/+zW-bcv3QtgZjZTE9")
                     ]
                     
                        
@@ -192,7 +192,7 @@ async def delete(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('Update Channel', url='https://t.me/subin_works'),
+            InlineKeyboardButton('Update Channel', url='https://t.me/+zW-bcv3QtgZjZTE9'),
             InlineKeyboardButton('Source Code', url='https://github.com/subinps/Media-Search-bot')
         ]
         ]
