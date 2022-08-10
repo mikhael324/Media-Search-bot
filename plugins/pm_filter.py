@@ -288,11 +288,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "about":
             buttons = [
                 [
-                    InlineKeyboardButton('Update Channel', url='https://t.me/+8rBLWgeC8MliNGU9'),
+                    InlineKeyboardButton('Update Channel', url='https://t.me/+zW-bcv3QtgZjZTE9'),
                     InlineKeyboardButton('Source Code', url='https://github.com/subinps/Media-Search-bot')
                 ]
                 ]
-            await query.message.edit(text="Source Code : <a href='https://github.com/subinps/Media-Search-bot'>Click here</a>\nUpdate Channel : <a href='https://t.me/+8rBLWgeC8MliNGU9'>MovieVilla™</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+            await query.message.edit(text="Source Code : <a href='https://github.com/subinps/Media-Search-bot'>Click here</a>\nUpdate Channel : <a href='https://t.me/+zW-bcv3QtgZjZTE9'>MovieVilla™</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 
 
@@ -314,7 +314,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = [
                     [
                      
-                        InlineKeyboardButton('🔔Click 👉 New Ott Movies 📢', url='https://t.me/+8rBLWgeC8MliNGU9')
+                        InlineKeyboardButton('🔔Click 👉 New Ott Movies 📢', url='https://t.me/+zW-bcv3QtgZjZTE9')
                     ]
                     ]
                 
@@ -346,7 +346,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = [
                     [
                        
-                        InlineKeyboardButton('🔔Click 👉 New Ott Movies 📢', url='https://t.me/+8rBLWgeC8MliNGU9')
+                        InlineKeyboardButton('🔔Click 👉 New Ott Movies 📢', url='https://t.me/+zW-bcv3QtgZjZTE9')
                     ]
                     ]
                 
