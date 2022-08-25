@@ -89,8 +89,8 @@ async def filter(client, message):
 
             else:
                 k= await message.reply_text(f"<b>Here is What I Found In My Database For Your Query {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
-                await asyncio.sleep(600)
-                await k.delete()
+                await asyncio.sleep(20)
+                await k.edit_text("🗑️ Filter For {search} Is Closed")
                
             return 
 
