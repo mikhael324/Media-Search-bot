@@ -89,10 +89,10 @@ async def filter(client, message):
 
             else:
                 k= await message.reply_text(f"<b>Here is What I Found In My Database For Your Query {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
-                await asyncio.sleep(10)
+                await asyncio.sleep(600)
                 await k.delete()
                
-            return
+            return 
 
         data = BUTTONS[keyword]
         buttons = data['buttons'][0].copy()
@@ -111,8 +111,8 @@ async def filter(client, message):
         if poster:
             await message.reply_photo(photo=poster, caption=f"<b>Here is What I Found In My Database For Your Query {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
         else:
-           k= await message.reply_text(f"<b>Hey 👋 {message.from_user.id} \n Your Search Results For:- {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
-           await asyncio.sleep(10)
+           k= await message.reply_text(f"<b>Hey 👋 Buddy 😎\n Your Search Results For:- {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
+           await asyncio.sleep(600)
            await k.delete()
                 
           
@@ -164,7 +164,7 @@ async def group(client, message):
             else:
               
               k= await message.reply_text(f"<b>Here is What I Found In My Database For Your Query {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
-              await asyncio.sleep(10)
+              await asyncio.sleep(600)
 
               await k.delete()
             return
@@ -187,7 +187,7 @@ async def group(client, message):
             await message.reply_photo(photo=poster, caption=f"<b>Here is What I Found In My Database For Your Query {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
         else:
             k= await message.reply_text(f"<b>Here is What I Found In My Database For Your Query {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
-            await asyncio.sleep(20)
+            await asyncio.sleep(600)
             await k.delete()
 
     
