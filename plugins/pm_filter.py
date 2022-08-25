@@ -89,8 +89,8 @@ async def filter(client, message):
 
             else:
                 k= await message.reply_text(f"<b>Here is What I Found In My Database For Your Query {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
-                await asyncio.sleep(20)
-                await k.edit_text(f"<b>🗑️ Filter For {search} Is Closed</b>")
+                await asyncio.sleep(600)
+                await k.edit_text(f"<b>🗑️ Filter For {search} Is Closed ‼️</b>")
                
             return 
 
@@ -113,7 +113,7 @@ async def filter(client, message):
         else:
            k= await message.reply_text(f"<b>Hey 👋 Buddy 😎\n Your Search Results For:- {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
            await asyncio.sleep(600)
-           await k.edit_text(f"<b>🗑️ Filter For {search} Is Closed</b>")
+           await k.edit_text(f"<b>🗑️ Filter For {search} Is Closed ‼️</b>")
                 
           
 
@@ -164,9 +164,9 @@ async def group(client, message):
             else:
               
               k= await message.reply_text(f"<b>Here is What I Found In My Database For Your Query {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
-              await asyncio.sleep(10)
+              await asyncio.sleep(600)
 
-              await k.edit_text(f"<b>🗑️ Filter For {search} Is Closed</b>")
+              await k.edit_text(f"<b>🗑️ Filter For {search} Is Closed ‼️</b>")
             return 
 
         data = BUTTONS[keyword]
@@ -188,7 +188,7 @@ async def group(client, message):
         else:
             k= await message.reply_text(f"<b>Here is What I Found In My Database For Your Query {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
             await asyncio.sleep(600)
-            await k.edit_text(f"<b>🗑️ Filter For {search} Is Closed</b>")
+            await k.edit_text(f"<b>🗑️ Filter For {search} Is Closed ‼️</b>")
 
     
 def get_size(size):
