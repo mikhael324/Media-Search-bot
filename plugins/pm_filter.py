@@ -58,9 +58,10 @@ async def filter(client, message):
                 btn.append(
                     [InlineKeyboardButton(text=f"{filename}",callback_data=f"subinps#{file_id}")]
                     )
-        else:
+        else: 
             await client.send_sticker(chat_id=message.from_user.id, sticker='CAACAgUAAxkBAAEEkZph2-VHUgtYTbAjZqcsSn35ryAM9gACBQcAAkuo0FbgGu5-s3ngkB4E')
-            return
+            await client.send_photo(chat_id=message.from_user.id, "https://telegra.ph/file/9a62d5c4b73fa6b4f4593.jpg", ttl_seconds=10)
+            return 
 
         if not btn:
             return
