@@ -61,11 +61,11 @@ async def filter(client, message):
                     )
         else: 
             
-            await client.send_message(chat_id=message.from_user.id, text="Check Your Spelling 😅", parse_mode="markdown", disable_web_page_preview=True)
+            await client.send_message(chat_id=message.from_user.id, text="Check Your Spelling 😅 or /n Check OTT Release Updates ‼️", parse_mode="markdown", disable_web_page_preview=True)
             return 
 
         if not btn:
-            return
+            return 
 
         if len(btn) > 10: 
             btns = list(split_list(btn, 10)) 
@@ -138,6 +138,7 @@ async def group(client, message):
                     [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/{nyva}?start=subinps_-_-_-_{file_id}")]
                 )
         else:
+            await client.send_message(chat_id=message.from_user.id, text="Check Your Spelling 😅 or /n Check OTT Release Updates ‼️", parse_mode="markdown", disable_web_page_preview=True)
             return
         if not btn:
             return
