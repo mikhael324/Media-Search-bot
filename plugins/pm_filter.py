@@ -61,7 +61,7 @@ async def filter(client, message):
                     )
         else: 
             
-            await client.send_message(chat_id=message.from_user.id, text=f"<b>⚠️ No Results Found ‼️ \n \n 1. Check Your Spelling Here 👇 \n 🔎 WWW.Google.Com \n \n 2. Check OTT Release Updates ‼️ \n \n ❣️😎</b>", parse_mode="markdown", disable_web_page_preview=True)
+            await client.send_message(chat_id=message.from_user.id, text="⚠️ No Results Found ‼️ \n \n 1. Check Your Spelling In Google 🔍 \n or \n 2. Check OTT Release Updates ‼️ \n \n ❣️😎", parse_mode="markdown", disable_web_page_preview=True)
             return 
 
         if not btn:
