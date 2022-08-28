@@ -61,7 +61,7 @@ async def filter(client, message):
                     )
         else: 
             
-            await client.send_message(chat_id=message.from_user.id, text="⚠️ No Results Found ‼️ \n \n 1. Check Your Spelling In Google 🔍 \n or \n 2. Check OTT Release Updates ‼️ \n \n ❣️😎", parse_mode="markdown", disable_web_page_preview=True)
+            await client.send_message(chat_id=message.from_user.id, text="⚠️ No Results Found ‼️ Reason 👇 \n \n 1. Check Your Spelling In Google 🔍 \n \n or \n \n 2. Check OTT Release Updates ‼️ \n \n ❣️😎", parse_mode="markdown", disable_web_page_preview=True)
             return 
 
         if not btn:
@@ -138,8 +138,8 @@ async def group(client, message):
                     [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/{nyva}?start=subinps_-_-_-_{file_id}")]
                 )
         else:
-            await message.reply_text(f"<b>⚠️ No Results Found ‼️ \n \n 1. Check Your Spelling Here 👇 \n 🔎 WWW.Google.Com \n \n 2. Check OTT Release Updates ‼️ \n \n ❣️😎</b>", quote=True)
-            return
+            await message.reply_text(f"<b>⚠️ No Results Found ‼️ Reason 👇 \n \n 1. Check Your Spelling In Google \n \n or \n \n 2. Check OTT Release Updates ‼️ \n \n ❣️😎</b>", quote=True)
+            return 
         if not btn:
             return
 
