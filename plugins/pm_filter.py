@@ -138,7 +138,7 @@ async def group(client, message):
                     [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/{nyva}?start=subinps_-_-_-_{file_id}")]
                 )
         else:
-            await message.reply_text("Check Your Spelling 😅 or \n Check OTT Release Updates ‼️", quote=True)
+            await message.reply_text(f"<b>⚠️ No Results Found ‼️ \n \n 1. Check Your Spelling Here 👇 \n 🔎 WWW.Google.Com \n \n 2. Check OTT Release Updates ‼️ \n \n ❣️😎</b>", quote=True)
             return
         if not btn:
             return
