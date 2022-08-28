@@ -61,7 +61,10 @@ async def filter(client, message):
                     )
         else: 
             
-            await client.send_message(chat_id=message.from_user.id, text="⚠️ No Results Found ‼️ Reason 👇 \n \n 1. Check Your Spelling In Google 🔍 \n \n or \n \n 2. Check OTT Release Updates ‼️ \n \n ❣️😎", parse_mode="markdown", disable_web_page_preview=True)
+            k=await client.send_message(chat_id=message.from_user.id, text="⚠️ No Results Found ‼️ Reason 👇 \n \n 1. Check Your Spelling In Google 🔍 \n \n or \n \n 2. Check OTT Release Updates ‼️ \n \n ❣️😎", parse_mode="markdown", disable_web_page_preview=True)
+            await asyncio.sleep(120)
+
+            await k.edit_text(f"<b>🗑️ Filter Deleted After 2 Mins ‼️ \n 🔍Search Again !!</b>")
             return 
 
         if not btn:
@@ -138,7 +141,9 @@ async def group(client, message):
                     [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/{nyva}?start=subinps_-_-_-_{file_id}")]
                 )
         else:
-            await message.reply_text(f"<b>⚠️ No Results Found ‼️ Reason 👇 \n \n 1. Check Your Spelling In Google \n \n or \n \n 2. Check OTT Release Updates ‼️ \n \n ❣️😎</b>", quote=True)
+            k=await message.reply_text(f"<b>⚠️ No Results Found ‼️ Reason 👇 \n \n 1. Check Your Spelling In Google \n \n or \n \n 2. Check OTT Release Updates ‼️ \n \n ❣️😎</b>", quote=True)
+            await asyncio.sleep(120)
+            await k.edit_text(f"<b>🗑️ Filter Deleted After 2 Mins ‼️ \n 🔍Search Again !!</b>")
             return 
         if not btn:
             return
