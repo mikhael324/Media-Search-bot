@@ -62,9 +62,11 @@ async def filter(client, message):
         else: 
             
             k=await client.send_message(chat_id=message.from_user.id, text="⚠️New Movies (2022) \n \n ‼️ Wait For OTT Release. \n \n ‼️ Already Released ⁉️ Then Check Your Spelling 🥲", parse_mode="markdown", disable_web_page_preview=True)
-            await asyncio.sleep(120)
+            await asyncio.sleep(60)
 
             await k.edit_text(f"<b>🗑️ Filter Deleted After 2 Mins ‼️ \n 🔍Search Again !!</b>")
+            await asyncio.sleep(60)
+            await k.delete()
             return 
 
         if not btn:
@@ -92,9 +94,11 @@ async def filter(client, message):
 
             else:
                 k= await message.reply_text(f"<b>Here is What I Found In My Database For Your Query {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
-                await asyncio.sleep(120)
+                await asyncio.sleep(60)
                 await k.edit_text(f"<b>🗑️ Filter Deleted After 2 Mins ‼️ \n 🔍Search Again !!</b>")
-               
+                await asyncio.sleep(60)
+
+                await k.delete()
             return 
 
         data = BUTTONS[keyword]
@@ -115,8 +119,10 @@ async def filter(client, message):
             await message.reply_photo(photo=poster, caption=f"<b>Here is What I Found In My Database For Your Query {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
         else:
            k= await message.reply_text(f"<b>Hey 👋 Buddy 😎\n Your Search Results For:- {search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </b>", reply_markup=InlineKeyboardMarkup(buttons))
-           await asyncio.sleep(120)
+           await asyncio.sleep(60)
            await k.edit_text(f"<b>🗑️ Filter Deleted After 2 Mins ‼️ \n 🔍Search Again !!</b>")
+           await asyncio.sleep(60)
+           await k.delete()
                 
           
 
@@ -142,8 +148,10 @@ async def group(client, message):
                 )
         else:
             k=await message.reply_text(f"<b>⚠️New Movies (2022) \n \n ‼️ Wait For OTT Release. \n \n ‼️ Already Released ⁉️ Then Check Your Spelling 🥲</b>", quote=True)
-            await asyncio.sleep(120)
+            await asyncio.sleep(60)
             await k.edit_text(f"<b>🗑️ Filter Deleted After 2 Mins ‼️ \n 🔍Search Again !!</b>")
+            await asyncio.sleep(60)
+            await k.delete()
             return 
         if not btn:
             return
