@@ -62,11 +62,12 @@ async def filter(client, message):
         else: 
             
             k=await client.send_message(chat_id=message.from_user.id, text="⚠️New Movies (2022) \n \n ‼️ Wait For OTT Release. \n \n ‼️ Already Released ⁉️ Then Check Your Spelling 🥲", parse_mode="markdown", disable_web_page_preview=True)
-            await asyncio.sleep(60)
+            await asyncio.sleep(5)
 
             await k.edit_text(f"<b>🗑️ Filter Deleted After 1 Mins ‼️ \n 🔍Search Again !!</b>")
-            await asyncio.sleep(60)
+            await asyncio.sleep(5)
             await k.delete()
+            await message.delete()
             return 
 
         if not btn:
